@@ -1,6 +1,6 @@
 <template>
 	<div>
-		<i>fdsf11</i>
+		<!-- <i>fdsf11</i> -->
 		<transition name="router-fade" mode="out-in">
 			<keep-alive>
 			    <router-view v-if="$route.meta.keepAlive"></router-view>

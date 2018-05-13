@@ -3,7 +3,7 @@
         <head-top signin-up='home'>
             <span slot='logo' class="head_logo"  @click="reload">ele.me</span>
             <i slot="search">搜索</i>
-            <b slot="edit">fdfjljpoj</b>
+            <!-- <b slot="edit">fdfjljpoj</b> -->
         </head-top>
         <nav class="city_nav">
             <div class="city_tip">

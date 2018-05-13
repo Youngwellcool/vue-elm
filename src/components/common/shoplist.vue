@@ -7,7 +7,7 @@
 				</section>
 				<hgroup class="shop_right">
 					<header class="shop_detail_header">
-						<h4 :class="item.is_premium? 'premium': ''" class="" class="shop_title ellipsis">{{item.name}}</h4>
+						<h4 :class="item.is_premium? 'premium': ''" class="shop_title ellipsis">{{item.name}}</h4>
 						<ul class="shop_detail_ul">
 							<li v-for="item in item.supports" :key="item.id" class="supports">{{item.icon_name}}</li>
 						</ul>
@@ -111,7 +111,7 @@ export default {
 				this.touchend = true;
 			}
 			this.hideLoading();
-			//开始监听scrollTop的值，达到一定程度后显示返回顶部按钮
+			//开始监听scrollTop的值，达到一定程度后显示返回顶部按钮,参数为一个callback函数，callback函数的参数status为true或者false
 			showBack(status => {
 				this.showBackStatus = status;
 			});
